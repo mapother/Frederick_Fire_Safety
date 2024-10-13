@@ -1,0 +1,158 @@
+body {
+  /* Use Django's static files directory for the background image */
+  background-image: url('/static/website/img/WALL OF FLAME.png');
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* these lines are the important bits */
+  height: 0;
+  padding-bottom: 56.25%;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 100px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.header img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container {
+  font-family: arial;
+  overflow-y: auto;
+}
+
+.section2 {
+  height: 30px;
+  position: relative;
+  color: white;
+}
+
+.welcome {
+  height: 150px;
+  background-color: white;
+  /* position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  max-height: max-content; */
+  /* margin: 200px; */
+  display: grid;
+  grid-template-columns: 1fr 2px 1fr; /* Two columns with a middle divider */
+  gap: 10px; /* Space between columns */
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* .column {
+  background-color: #f0f0f0;
+  padding: 20px;
+  overflow-wrap: anywhere; /* Enables text wrapping within the columns */
+
+.column1 {
+  padding: 20px;
+  overflow-wrap: anywhere; /* Enables text wrapping within the columns */
+  font-family: arial;
+  font-size: 30px;
+  background-color: rgba(240, 240, 240, 0.8); /* Semi-transparent background */
+}
+
+.column2 {
+  /* background-color: #f0f0f0; */
+  padding: 20px;
+  font-family: arial;
+  overflow-wrap: anywhere; /* Enables text wrapping within the columns */
+}
+
+.divider {
+  background-color: #000;
+}
+
+.leadership {
+  height: 25px;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: max-content;
+  font-size: 50px;
+}
+
+.owner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: max-content;
+  margin: 50px;
+  /* filter: grayscale(100); */
+}
+
+.feedback {
+  height: 50px;
+  /* background-color: white; */
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: max-content;
+  font-size: 50px;
+}
+
+.contactus {
+  height: 150px;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: max-content;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+  flex: 1;
+}
+
+.ownertext1 {
+  font-size: 25px;
+  padding-left: 20px;
+  padding-top: 0%;
+  float: left;
+  color: white;
+}
+
+.ownertext2 {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 20%;
+  float: left;
+}

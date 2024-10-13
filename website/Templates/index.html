@@ -1,0 +1,105 @@
+{% load static %}
+<link href="{% static 'website/style.css' %}" rel="stylesheet" />
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<link href="{% static 'website/style.css' %}" rel="stylesheet" />-->
+    <title>Frederick Fire and Safety</title>
+    <script>
+        function openEmail() {
+            window.open('mailto:example@gmail.com?subject=Hello%20there&body=Hello%20Frederick%20Fire%20and%20Safety', '_blank');
+        }
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <img src="{% static 'website/img/FFS LOGO.png' %}" alt="Frederick Fire and Safety Logo" />
+    </header>
+
+    <link href="{% static 'style.css' %}" rel="stylesheet" />
+
+    <div class="container">
+      <!-- <div class="section1"></div> -->
+      <div class="section2">
+        <p></p>
+      </div>
+
+      <div class="welcome">
+        <div class="column1">
+          <!-- Column 1 Content -->
+          WELCOME TO FREDERICK FIRE AND SAFETY
+        </div>
+        <div class="divider"></div>
+        <div class="column2">
+          <!-- Column 2 Content -->
+          Our company specializes in the sale of high-quality fire extinguishers
+          to ensure safety and peace of mind for our customers.
+        </div>
+      </div>
+      <div class="section2">
+        <p></p>
+      </div>
+      <!-- <div class="leadership">
+        <h3>LEADERSHIP</h3>
+      </div> -->
+      <div class="section2">
+        <p></p>
+      </div>
+      <div class="owner">
+        <!--<img
+          src="img/BRADPITT1 grey.png"
+          alt="Mark Lookingbill"
+          height="200"
+          width="250"
+        />-->
+        <!--<div class="ownertext1">
+          <strong
+            >MARK LOOKINGBILL is the Founder and President of Frederick Fire and
+            Safety. He has a reputation for providing peace of mind to a wide
+            variety of commercial, institutional, and even private citizen
+            customers in the area of Frederick, Maryland and beyond by offering
+            quality fire safety products at competitive costs.</strong
+          >
+        </div>-->
+        <!-- <div class="ownertext2">
+          Text and photo in a layout like 'Martin Build'
+        </div> -->
+      </div>
+      <div class="section2">
+        <p></p>
+      </div>
+      <div class="feedback">
+        <h3>WE WANT TO HEAR FROM YOU!</h3>
+        <form method="post">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="contactus">
+        <h3>CONTACT US</h3>
+        <p></p>
+        <ul>
+          <li>Serving the World from Frederick, Maryland</li>
+          <li>Tel: (301) 662-4606</li>
+          <li>Fax: (301) 624-1079</li>
+          <li>Email:
+            <!--<a href="mailto:Frederickfireandsafety@gmail.com?subject=Hello%20there&body=Hello%20Frederick%20Fire%20and%20Safety".">-->
+             <a href="#" onclick="openEmail(); return false;">
+              Frederickfireandsafety@gmail.com
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <p>Designed by Sean Kerr</p>
+    </footer>
+  </body>
+</html>
